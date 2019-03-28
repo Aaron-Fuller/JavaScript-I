@@ -96,12 +96,14 @@ let carList = [];
 let oldCars = [];
 for (let i = 0; i < inventory.length; i++){
     carList.push(inventory[i].car_year);
+}
 
-    if (carList.car_year < 2000){
-        oldCars.push(inventory[i].car_year)
+for (let i = 0; i < carList.length; i++){
+    if(carList[i] < 2000){
+        oldCars.push(carList[i]);
     }
 }
-console.log(oldCars.sort()); 
+console.log(oldCars.length);  
 
 // ==== Challenge 6 ====
 // A buyer is interested in seeing only BMW and Audi cars within the inventory.  Return an array that only contains BMW and Audi cars.  Once you have populated the BMWAndAudi array, use JSON.stringify() to show the results of the array in the console.
