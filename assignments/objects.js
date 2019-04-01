@@ -48,8 +48,8 @@ const Antonietta = {
   "name": "Antonietta",
   "email": "adaine5@samsung.com",
   "gender": "F",
-  multiplyNums = function (a,b) {
-    return multiplyNums;
+  multiplyNums: function (a,b) {
+    return a * b;
   }
 }
 
